@@ -70,6 +70,7 @@
       <p>2. 작품</p>
       <p>3. 유서</p>
       <p>4. 레시피</p>
+      <p>5. 굿즈 구매</p>
     </div>
 
     <input type="text" id="choiceInput" placeholder="숫자 입력" />
@@ -124,6 +125,8 @@
             resultDiv.scrollTop = resultDiv.scrollHeight;
           }, 30);
           break;
+        case '5':
+          resultDiv.textContent = '오른쪽 위 버튼을 참고해주세요.'
         default:
           resultDiv.textContent = '올바른 숫자를 입력하세요';
       }
