@@ -130,7 +130,13 @@
           resultDiv.textContent = '오른쪽 위 버튼을 참고해주세요.'
           break;
         case '6':
-          resultDiv.textContent = ''
+          let rollingNumber = 60;
+          resultDiv.textContent = '숫자: ' + rollingNumber + '\n바이탈 체크 중...';
+
+          rollingInterval = setInterval(() => {
+          rollingNumber = Math.floor(Math.random() * 41) + 60; // 60 ~ 100
+          resultDiv.textContent = '심박수: ' + rollingNumber + '\n바이탈 체크 중...';
+          }, 1000);
           break;
         default:
           resultDiv.textContent = '올바른 숫자를 입력하세요';
