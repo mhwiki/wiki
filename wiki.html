@@ -135,11 +135,11 @@
           break;
         case '6':
           let rollingNumber = 60;
-          resultDiv.textContent = '숫자: ' + rollingNumber + '\n바이탈 체크 중...';
+          resultDiv.textContent = '심박수 : ' + rollingNumber + '\n바이탈 체크 중...\n\n생존 여부 :\n\n위치 :';
 
           rollingInterval = setInterval(() => {
           rollingNumber = Math.floor(Math.random() * 41) + 60; // 60 ~ 100
-          resultDiv.textContent = '심박수: ' + rollingNumber + '\n바이탈 체크 중...\n\n생존 여부 : alive';
+          resultDiv.textContent = '심박수 : ' + rollingNumber + '\n바이탈 체크 중...\n\n생존 여부 : alive\n\n위치 : [하이퍼링크 차단됨];
           }, 1000);
           break;
         default:
