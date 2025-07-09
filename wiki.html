@@ -82,7 +82,7 @@
 
   <script>
     let aliveInterval;
-
+    let rollingInterval;
     function handleChoice() {
       const choice = document.getElementById('choiceInput').value.trim();
       const resultDiv = document.getElementById('resultText');
@@ -90,6 +90,10 @@
       if (aliveInterval) {
         clearInterval(aliveInterval);
         aliveInterval = null;
+      }
+      if (rollingInterval) {
+        clearInterval(rollingInterval);
+        rollingInterval = null;
       }
 
       document.body.style.backgroundImage = '';
